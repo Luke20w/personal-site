@@ -1,16 +1,26 @@
 import { Stack } from "@mui/material";
 
-import { HeaderSection, AboutMeSection, ProjectsSection } from "../sections";
+import {
+  HeaderSection,
+  AboutMeSection,
+  ProjectsSection,
+  SkillsSection,
+  RecognitionSection,
+  ExperienceSection,
+} from "../sections";
 import { NavBar } from "../components";
 
 function Home() {
   return (
     <Stack>
       <NavBar />
-      <Stack spacing={15} paddingBottom={20}>
+      <Stack marginTop={5} spacing={15} paddingBottom={20}>
         <HeaderSection />
         <AboutMeSection />
+        <SkillsSection />
         <ProjectsSection />
+        <RecognitionSection />
+        <ExperienceSection />
       </Stack>
     </Stack>
   );

@@ -3,7 +3,7 @@ import { Stack, Box, Typography } from "@mui/material";
 import { SkillPill } from ".";
 import { Project } from "../../model";
 
-export default function ProjectCard({ project, ...rest }: { project: Project; [key: string]: any }) {
+export default function ExperienceCard({ project, ...rest }: { project: Project; [key: string]: any }) {
   return (
     <Stack spacing={1} maxWidth={300} {...rest}>
       <Stack>

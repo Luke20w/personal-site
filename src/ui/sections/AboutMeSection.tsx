@@ -1,4 +1,4 @@
-import { Stack, Typography } from "@mui/material";
+import { Stack, Typography, Divider } from "@mui/material";
 
 import { paddingX } from "../theme/layout";
 import wave from "../../assets/waves/wave-section-1.png";
@@ -16,6 +16,7 @@ export default function AboutMeSection() {
       spacing={2}
     >
       <Typography variant="h2">About Me</Typography>
+      <Divider color="white" />
       <Typography variant="body1" marginTop={2}>
         Laboris minim id aute elit ea deserunt nulla proident duis laboris. Duis officia labore anim pariatur. Sit
         fugiat ad esse amet laboris culpa non eiusmod dolore. Minim nulla nisi excepteur consequat officia enim deserunt

@@ -1,4 +1,5 @@
-import NavBar from "./Navbar";
+import IconBar from "./IconBar";
 import ProjectCard from "./ProjectCard";
+import SkillPill from "./SkillPill";
 
-export { NavBar, ProjectCard };
+export { IconBar as NavBar, ProjectCard, SkillPill };
