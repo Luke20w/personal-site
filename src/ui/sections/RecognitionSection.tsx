@@ -18,7 +18,6 @@ export default function RecognitionSection() {
       spacing={2}
     >
       <Typography variant="h2">Recognition</Typography>
-      <Typography>Sometimes people talk about what I do</Typography>
       <Divider color="white" />
       {recognitions.map((recognition) => (
         <RecognitionCard recognition={recognition} />

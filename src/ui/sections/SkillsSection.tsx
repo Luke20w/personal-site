@@ -3,7 +3,7 @@ import { SkillPill } from "../components";
 
 import { paddingX } from "../theme/layout";
 import { skills } from "../../content";
-import { Proficiency } from "../../model/Project";
+import { Proficiency } from "../../model/Skill";
 
 export default function SkillsSection() {
   const colors = ["#14d969", "#ad00ff", "orange"];
@@ -20,9 +20,11 @@ export default function SkillsSection() {
               {proficiency}
             </Typography>
             <Box display="flex" flexWrap="wrap" flexDirection="row" gap={1}>
-              {Object.values(skills).map((skill, index) => (
-                <SkillPill key={index} skill={skill} />
-              ))}
+              {Object.values(skills)
+                .filter((skill) => skill.proficiency === proficiency)
+                .map((skill, index) => (
+                  <SkillPill key={index} skill={skill} />
+                ))}
             </Box>
           </Stack>
         ))}

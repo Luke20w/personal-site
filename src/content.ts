@@ -1,5 +1,5 @@
-import Project, { Skill, Proficiency } from "./model/Project";
-import { Exprience, Recognition } from "./model";
+import { Project, Skill, Exprience, Recognition } from "./model";
+import { Proficiency } from "./model/Skill";
 
 import image from "./assets/images/Shy.jpg";
 import Link from "./ui/theme/overrides/Link";
@@ -25,28 +25,46 @@ export const social = [
 ];
 
 export const skills = {
-  react: new Skill("React", Proficiency.Advanced, "akar-icons:react-fill", "#1a73e8"),
-  node: new Skill("Node", Proficiency.Advanced, "akar-icons:node-fill", "#8ab437"),
-  typescript: new Skill("TypeScript", Proficiency.Advanced, "cib:typescript", "#007acc"),
-  javascript: new Skill("JavaScript", Proficiency.Advanced, "cib:javascript", "#f0db4f"),
-  git: new Skill("Git", Proficiency.Advanced, "cib:git", "#f05032"),
-  aws: new Skill("AWS", Proficiency.Advanced, "bxl:aws", "#e34f26"),
-  reactNative: new Skill("React Native", Proficiency.Advanced, "akar-icons:react-fill", "#61dafb"),
+  amplify: new Skill("AWS Amplify", Proficiency.Advanced, "ion:logo-amplify"),
+  android: new Skill("Android Studio", Proficiency.Advanced, "ant-design:android-filled"),
+  appsync: new Skill("AWS AppSync", Proficiency.Advanced, "bxl:aws"),
+  apigateway: new Skill("AWS API Gateway", Proficiency.Advanced, "bxl:aws"),
+  c: new Skill("C/C++", Proficiency.Intermediate, "bxl:c-plus-plus"),
+  cognito: new Skill("AWS Cognito", Proficiency.Advanced, "bxl:aws"),
+  cloudfront: new Skill("AWS CloudFront", Proficiency.Advanced, "bxl:aws"),
+  cloudwatch: new Skill("AWS CloudWatch", Proficiency.Advanced, "bxl:aws"),
+  dynamob: new Skill("AWS DynamoDB", Proficiency.Advanced, "simple-icons:amazondynamodb"),
+  ec2: new Skill("AWS EC2", Proficiency.Advanced, "bxl:aws"),
+  figma: new Skill("Figma", Proficiency.Advanced, "gg:figma"),
+  git: new Skill("Git", Proficiency.Advanced, "cib:git"),
+  graphql: new Skill("GraphQL", Proficiency.Advanced, "akar-icons:graphql-fill"),
+  hls: new Skill("HLS Video Streaming", Proficiency.Advanced, "ic:baseline-hls"),
+  iam: new Skill("AWS IAM", Proficiency.Advanced, "bxl:aws"),
+  illustrator: new Skill("Adobe Illustrator", Proficiency.Intermediate, "file-icons:adobe-illustrator"),
+  java: new Skill("Java", Proficiency.Advanced, "la:java"),
+  javascript: new Skill("JavaScript", Proficiency.Expert, "cib:javascript"),
+  lambda: new Skill("AWS Lambda", Proficiency.Advanced, "mdi:lambda"),
+  mediaconvert: new Skill("AWS MediaConvert", Proficiency.Advanced, "bxl:aws"),
+  mips: new Skill("MIPS ISA", Proficiency.Intermediate, "file-icons:assembly-generic"),
+  mongodb: new Skill("MongoDB", Proficiency.Advanced, "bxl:mongodb"),
+  node: new Skill("Node JS", Proficiency.Expert, "akar-icons:node-fill"),
+  python: new Skill("Python", Proficiency.Intermediate, "akar-icons:python-fill"),
+  photoshop: new Skill("Adobe Photoshop", Proficiency.Intermediate, "file-icons:adobe-photoshop"),
+  premiere: new Skill("Adobe Premiere", Proficiency.Intermediate, "file-icons:adobe-premiere"),
+  react: new Skill("React", Proficiency.Expert, "akar-icons:react-fill"),
+  rfid: new Skill("RFID Read/Write", Proficiency.Intermediate, "wpf:rfid-tag"),
+  rekognition: new Skill("AWS Rekognition", Proficiency.Advanced, "bxl:aws"),
+  reactNative: new Skill("React Native", Proficiency.Expert, "akar-icons:react-fill"),
+  s3: new Skill("AWS S3", Proficiency.Advanced, "simple-icons:amazons3"),
+  swift: new Skill("Swift", Proficiency.Advanced, "fa6-brands:swift"),
+  typescript: new Skill("TypeScript", Proficiency.Expert, "cib:typescript"),
 };
 
 export const projects = [
   new Project({
     title: "Project 2",
     description: "Lorem dolore in fugiat et duis amet consequat amet adipisicing. Do voluptate officia eiusmod sit.",
-    skills: [
-      skills.react,
-      skills.node,
-      skills.typescript,
-      skills.javascript,
-      skills.git,
-      skills.aws,
-      skills.reactNative,
-    ],
+    skills: [skills.react, skills.node, skills.typescript, skills.javascript, skills.git, skills.reactNative],
     images: [image],
   }),
 ];
