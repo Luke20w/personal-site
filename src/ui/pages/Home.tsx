@@ -6,7 +6,7 @@ import {
   ProjectsSection,
   SkillsSection,
   RecognitionSection,
-  ExperienceSection,
+  ContactSection,
 } from "../sections";
 import { NavBar } from "../components";
 
@@ -14,13 +14,13 @@ function Home() {
   return (
     <Stack>
       <NavBar />
-      <Stack marginTop={5} spacing={15} paddingBottom={20}>
+      <Stack marginTop={5} spacing={15} paddingBottom={5}>
         <HeaderSection />
         <AboutMeSection />
         <SkillsSection />
         <ProjectsSection />
         <RecognitionSection />
-        <ExperienceSection />
+        <ContactSection />
       </Stack>
     </Stack>
   );

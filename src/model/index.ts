@@ -1,6 +1,6 @@
 import Project from "./Project";
 import Recognition from "./Recognition";
-import Exprience from "./Experience";
 import Skill from "./Skill";
+import ContactOption from "./ContactOption";
 
-export { Project, Recognition, Exprience, Skill };
+export { Project, Recognition, Skill, ContactOption };

@@ -1,34 +1,54 @@
-import { Stack, Typography, Box, Divider } from "@mui/material";
-import { SkillPill } from "../components";
+import { Stack, Typography, Box, Divider, ToggleButtonGroup, ToggleButton } from "@mui/material";
 
-import { paddingX } from "../theme/layout";
-import { skills } from "../../content";
-import { Proficiency } from "../../model/Skill";
+import { SectionBody, SectionContainer, SectionHeaderText, SkillPill } from "../components";
+import { skills, skillsHeader } from "../../content";
+import { Category, Proficiency } from "../../model/Skill";
+import { useState } from "react";
 
 export default function SkillsSection() {
-  const colors = ["#14d969", "#ad00ff", "orange"];
+  // -- Constants
+  const COLORS = ["#14d969", "#ad00ff", "orange"];
 
+  // -- Local state
+  const [grouping, setGrouping] = useState<"proficiency" | "category">("proficiency");
+
+  // -- Functions
+  function handleGroupingChange(_: React.MouseEvent<HTMLElement, MouseEvent>, value: "proficiency" | "category") {
+    setGrouping(value);
+  }
+
+  // -- Render
+  const groupingType = grouping === "proficiency" ? Proficiency : Category;
   return (
-    <Stack paddingX={paddingX} spacing={2}>
-      <Typography variant="h2">Skills</Typography>
-      <Typography>I've had the opportunity to learn a lot along the way</Typography>
-      <Divider />
-      <Stack spacing={2}>
-        {Object.keys(Proficiency).map((proficiency, index) => (
-          <Stack spacing={1}>
-            <Typography variant="h5" color={colors[index]}>
-              {proficiency}
-            </Typography>
-            <Box display="flex" flexWrap="wrap" flexDirection="row" gap={1}>
-              {Object.values(skills)
-                .filter((skill) => skill.proficiency === proficiency)
-                .map((skill, index) => (
-                  <SkillPill key={index} skill={skill} />
-                ))}
-            </Box>
+    <SectionContainer>
+      <SectionHeaderText title={skillsHeader.title} subitle={skillsHeader.subtitle} />
+      <SectionBody>
+        <Stack spacing={2}>
+          <Divider />
+          <Stack spacing={3}>
+            <ToggleButtonGroup value={grouping} exclusive onChange={handleGroupingChange} sx={{ alignSelf: "start" }}>
+              <ToggleButton value="proficiency">Group by proficiency</ToggleButton>
+              <ToggleButton value="category">Group by field</ToggleButton>
+            </ToggleButtonGroup>
+            <Stack spacing={2}>
+              {Object.keys(groupingType).map((value, index) => (
+                <Stack key={index} spacing={1}>
+                  <Typography variant="h5" color={COLORS[index]}>
+                    {value}
+                  </Typography>
+                  <Box display="flex" flexWrap="wrap" flexDirection="row" gap={1}>
+                    {Object.values(skills)
+                      .filter((skill) => skill[grouping] === value)
+                      .map((skill, index) => (
+                        <SkillPill key={index} skill={skill} />
+                      ))}
+                  </Box>
+                </Stack>
+              ))}
+            </Stack>
           </Stack>
-        ))}
-      </Stack>
-    </Stack>
+        </Stack>
+      </SectionBody>
+    </SectionContainer>
   );
 }

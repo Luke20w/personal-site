@@ -8,7 +8,7 @@ export default function ExperienceCard({ project, ...rest }: { project: Project;
     <Stack spacing={1} maxWidth={300} {...rest}>
       <Stack>
         <Typography variant="h4">{project.title}</Typography>
-        <Typography>{project.description}</Typography>
+        <Typography>{project.longDescription}</Typography>
       </Stack>
       {project.images &&
         project.images.map((image) => <img src={image} style={{ borderRadius: 5, maxWidth: 350, marginBottom: 5 }} />)}

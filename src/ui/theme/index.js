@@ -10,7 +10,6 @@ import breakpoints from "./breakpoints";
 import componentsOverride from "./overrides";
 import shadows, { customShadows } from "./shadows";
 //
-import useLocalStorage from "../hooks/useLocalStorage";
 import useSettings from "../hooks/useSettings";
 
 // ----------------------------------------------------------------------

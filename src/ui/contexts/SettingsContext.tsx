@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import { createContext } from "react";
 
 import useLocalStorage from "../hooks/useLocalStorage";
-import getColorPresets, { colorPresets, defaultPreset } from "../utils/getColorPresets";
 
 // ----------------------------------------------------------------------
 
@@ -26,7 +25,7 @@ SettingsProvider.propTypes = {
 
 function SettingsProvider({ children }: { children: any }) {
   const [settings, setSettings] = useLocalStorage("settings", {
-    themeMode: "light",
+    themeMode: "dark",
   });
 
   const onToggleTheme = () => {

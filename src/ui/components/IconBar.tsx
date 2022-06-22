@@ -1,9 +1,9 @@
 import { Icon } from "@iconify/react";
-import { Button, IconButton, Stack } from "@mui/material";
-import { social } from "../../content";
+import { Button, Stack } from "@mui/material";
 
 import useSettings from "../hooks/useSettings";
 import { paddingX } from "../theme/layout";
+import SocialIconBar from "./SocialIconBar";
 
 export default function IconBar() {
   const { themeMode, onToggleTheme } = useSettings();
@@ -17,11 +17,7 @@ export default function IconBar() {
           <Icon icon="akar-icons:sun-fill" width={22} height={22} />
         )}
       </Button>
-      {social.map(({ icon, url }) => (
-        <IconButton href={url} target="_blank" rel="noopener noreferrer">
-          <Icon icon={icon} width={22} height={22} />
-        </IconButton>
-      ))}
+      <SocialIconBar />
     </Stack>
   );
 }

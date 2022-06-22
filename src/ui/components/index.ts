@@ -1,5 +1,21 @@
 import IconBar from "./IconBar";
 import ProjectCard from "./ProjectCard";
 import SkillPill from "./SkillPill";
+import SectionHeaderText from "./SectionHeaderText";
+import SectionBody from "./SectionBody";
+import RecognitionCard from "./RecognitionCard";
+import SocialIconBar from "./SocialIconBar";
+import SectionBackground from "./SectionBackground";
+import SectionContainer from "./SectionContainer";
 
-export { IconBar as NavBar, ProjectCard, SkillPill };
+export {
+  IconBar as NavBar,
+  ProjectCard,
+  SkillPill,
+  SectionHeaderText,
+  SectionBody,
+  RecognitionCard,
+  SocialIconBar,
+  SectionBackground,
+  SectionContainer,
+};

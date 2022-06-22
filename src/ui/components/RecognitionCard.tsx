@@ -1,4 +1,3 @@
-import { LinkPreview } from "@dhaiwat10/react-link-preview";
 import { Stack, Box, Typography, Button } from "@mui/material";
 
 import { Recognition } from "../../model";
@@ -6,7 +5,7 @@ import { Recognition } from "../../model";
 export default function RecognitionCard({ recognition, ...rest }: { recognition: Recognition; [key: string]: any }) {
   return (
     <Stack spacing={2} {...rest}>
-      <Stack>
+      <Stack spacing={1}>
         <Typography variant="h4">{recognition.title}</Typography>
         <Typography>{recognition.description}</Typography>
       </Stack>
@@ -14,6 +13,7 @@ export default function RecognitionCard({ recognition, ...rest }: { recognition:
         <Box display="flex" flexWrap="wrap" flexDirection="row" gap={1}>
           {recognition.links.map((link, index) => (
             <Button
+              key={index}
               variant="outlined"
               color="info"
               sx={{ padding: 2 }}

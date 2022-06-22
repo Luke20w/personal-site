@@ -3,6 +3,6 @@ import HeaderSection from "./HeaderSection";
 import ProjectsSection from "./ProjectsSection";
 import SkillsSection from "./SkillsSection";
 import RecognitionSection from "./RecognitionSection";
-import ExperienceSection from "./ExperienceSection";
+import ContactSection from "./ContactSection";
 
-export { AboutMeSection, HeaderSection, ProjectsSection, SkillsSection, RecognitionSection, ExperienceSection };
+export { AboutMeSection, HeaderSection, ProjectsSection, SkillsSection, RecognitionSection, ContactSection };
