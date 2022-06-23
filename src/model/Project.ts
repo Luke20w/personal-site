@@ -7,7 +7,6 @@ export default class Project {
   skills: Skill[];
   images?: string[];
   videos?: string[];
-  type: "personal" | "professional";
 
   constructor(arg: ProjectArgument) {
     this.title = arg.title;
@@ -16,7 +15,6 @@ export default class Project {
     this.skills = arg.skills;
     this.images = arg.images;
     this.videos = arg.videos;
-    this.type = arg.type;
   }
 }
 
@@ -27,5 +25,4 @@ export type ProjectArgument = {
   skills: Skill[];
   images?: string[];
   videos?: string[];
-  type: "personal" | "professional";
 };

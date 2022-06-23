@@ -146,7 +146,6 @@ export const projects = [
     ],
     images: [crowdClipsLogo, crowdClipsMobile, crowdClispWeb],
     videos: ["https://crowdclips-public.s3.us-east-2.amazonaws.com/clips-video.mp4"],
-    type: "personal",
   }),
   new Project({
     title: "Mobile games",
@@ -165,42 +164,37 @@ export const projects = [
       rotationRun,
       spikeSmash,
     ],
-    type: "personal",
   }),
   new Project({
     title: "Infinity UI",
     shortDescription: "A UI kit for React Native built for a few freelance projects",
     skills: [skills.reactNative, skills.javascript],
     images: [infinity1, infinity2, infinity3, infinity4, infinity5],
-    type: "personal",
-  }),
-  new Project({
-    title: "This site!",
-    shortDescription:
-      "This site let's you know a little bit more about me than a resume would and as a bonus, I had tons to fun making it!",
-    skills: [skills.react, skills.aws, skills.typescript],
-    type: "personal",
   }),
   new Project({
     title: "RiNTER",
     shortDescription: "Freelance real estate management and communication app wirefram",
     skills: [skills.figma, skills.photoshop, skills.illustrator],
     images: [rinterMockup],
-    type: "professional",
   }),
   new Project({
     title: "Legislation Data Scraper",
     shortDescription:
       "Freelance web app built for education company Abre to scrape data from legislation websites and aggregate the latest education policies for 6 states into a single database",
     skills: [skills.node, skills.javascript, skills.webScraping, skills.mongodb],
-    type: "professional",
+  }),
+  new Project({
+    title: "This site!",
+    shortDescription:
+      "This site let's you know a little bit more about me than a resume would and as a bonus, I had tons to fun making it!",
+    skills: [skills.react, skills.aws, skills.typescript],
   }),
 ];
 
 // -- Recognition section
 export const recognitionHeader = {
   title: "Recognition",
-  subtitle: "I've been given the chance to share some of what I think",
+  subtitle: "I've been given the chance to share some of what I've learned",
 };
 
 export const recognitions = [

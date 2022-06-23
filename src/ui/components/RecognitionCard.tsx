@@ -7,10 +7,7 @@ export default function RecognitionCard({ recognition }: { recognition: Recognit
     <Stack spacing={2} alignItems="center">
       <img src={recognition.image} width={100} style={{ margin: 50 }} />
       <Stack spacing={2} alignItems="center">
-        <Stack spacing={1}>
-          <Typography variant="h4">{recognition.title}</Typography>
-          <Typography>{recognition.description}</Typography>
-        </Stack>
+        <Typography>{recognition.description}</Typography>
         {recognition.links && (
           <Stack flexWrap="wrap" direction="row" justifyContent="center">
             {recognition.links.map((link, index) => (
