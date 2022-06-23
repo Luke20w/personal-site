@@ -3,7 +3,7 @@ import Typist from "react-typist";
 
 import { paddingX } from "../theme/layout";
 
-import profileImage from "../../assets/images/Profile.jpg";
+import profileImage from "../../assets/images/profile.jpg";
 
 export default function HeaderSection() {
   return (

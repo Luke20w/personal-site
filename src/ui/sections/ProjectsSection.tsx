@@ -1,4 +1,4 @@
-import { Stack, Box, Divider } from "@mui/material";
+import { Stack, Divider, Grid } from "@mui/material";
 
 import { projects, projectsHeader } from "../../content";
 import { ProjectCard, SectionBody, SectionContainer, SectionHeaderText } from "../components";
@@ -11,11 +11,13 @@ export default function ProjectsSection() {
       <SectionBody>
         <Stack spacing={2}>
           <Divider />
-          <Box display="flex" flexWrap="wrap" flexDirection="row" gap={4}>
+          <Grid container spacing={3}>
             {projects.map((project, index) => (
-              <ProjectCard key={index} project={project} />
+              <Grid item>
+                <ProjectCard key={index} project={project} />
+              </Grid>
             ))}
-          </Box>
+          </Grid>
         </Stack>
       </SectionBody>
     </SectionContainer>

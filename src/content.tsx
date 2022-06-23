@@ -1,6 +1,7 @@
+import { Link } from "@mui/material";
+
 import { Project, Skill, Recognition, ContactOption } from "./model";
 import { Category, Proficiency } from "./model/Skill";
-
 import { RecognitionLink } from "./model/Recognition";
 
 import crowdClipsLogo from "./assets/images/projects/crowdclips/logo.png";
@@ -52,12 +53,14 @@ export const aboutMeHeader = {
   title: "Who am I?",
   subtitle: "That's a big question",
 };
-export const aboutMeContent = `I lived in a small town near Cincinnati, OH, called Fort Thomas, until I left for Georgia Tech in 2020. My passion for building things started when I was 11. I began making little mobile games for fun and that Christmas, I asked for an Apple Developer License. Thankfully, Santa🎅 came through for me. From then on I spent whatever time I had outside of school and sports building. Whenever I ran into a problem, I'd scour the internet for the answer and then go on until I found the next problem. Over the years I was able to learn a lot with this strategy and that's what makes me a huge believer in learning by doing.
+export const aboutMeContent = {
+  beforeKleo: `I lived in a small town near Cincinnati, OH, called Fort Thomas, until I left for Georgia Tech in 2020. My passion for building things started when I was 11. I began making little mobile games for fun and that Christmas, I asked for an Apple Developer License. Thankfully, Santa🎅 came through for me. From then on I spent whatever time I had outside of school and sports building. Whenever I ran into a problem, I'd scour the internet for the answer and then go on until I found the next problem. Over the years I was able to learn a lot with this strategy and that's what makes me a huge believer in learning by doing.
                                 
-In high school, I found another passion for turning my creations into businesses and I tried my hand at a few entrepreneurial endeavors, one of them which I've been working on to this day. I also did some freelance work, proving to myself again that diving into things I don't know is how I learn best.
-
-Now I  work at a language learning startup, Kleo, managing our development team and study Computer Engineering at Georgia Tech. I also love competition, especially sports. I'm a massive Bengals and Reds (unfortunately) fan and I compete in Spikeball tournaments around Atlanta. That's about all I have for now but it's not at all comprehensive of who I am so let's have a conversation!`;
-
+  In high school, I found another passion for turning my creations into businesses and I tried my hand at a few entrepreneurial endeavors, one of them which I've been working on to this day. I also did some freelance work, proving to myself again that diving into things I don't know is how I learn best.
+  
+  Now I  work at a language learning startup, `,
+  afterKleo: `, managing our development team and study Computer Engineering at Georgia Tech. I also love competition, especially sports. I'm a massive Bengals and Reds (unfortunately) fan and I compete in Spikeball tournaments around Atlanta. That's about all I have for now but it's not at all comprehensive of who I am so let's have a conversation!`,
+};
 // -- Skills section
 export const skillsHeader = {
   title: "Skills",
@@ -86,6 +89,12 @@ export const skills = {
     Proficiency.Intermediate,
     Category.Design,
     "file-icons:adobe-illustrator"
+  ),
+  intent: new Skill(
+    "Speech Intent Algorithm Design",
+    Proficiency.Intermediate,
+    Category.Development,
+    "fluent:math-formula-16-filled"
   ),
   java: new Skill("Java", Proficiency.Advanced, Category.Development, "la:java"),
   javascript: new Skill("JavaScript", Proficiency.Expert, Category.Development, "cib:javascript"),
@@ -143,6 +152,7 @@ export const projects = [
       skills.objectRecognition,
       skills.hls,
       skills.graphql,
+      skills.clean,
     ],
     images: [crowdClipsLogo, crowdClipsMobile, crowdClispWeb],
     videos: ["https://crowdclips-public.s3.us-east-2.amazonaws.com/clips-video.mp4"],
@@ -182,6 +192,28 @@ export const projects = [
     shortDescription:
       "Freelance web app built for education company Abre to scrape data from legislation websites and aggregate the latest education policies for 6 states into a single database",
     skills: [skills.node, skills.javascript, skills.webScraping, skills.mongodb],
+  }),
+  new Project({
+    title: "Kleo",
+    shortDescription:
+      "Like any job, it's a big collection of projects. I've been working as Chief Technology Officer and now Director of Engineering at Kleo since summer 2020. If you want to see more about Kleo or find out more about what I do there, you can check out our website or my resume in the contact section below",
+    components: [
+      <Link href="https://www.meetkleo.com" sx={{ color: "white", fontWeight: "bold" }}>
+        Our site
+      </Link>,
+    ],
+    skills: [
+      skills.speech,
+      skills.intent,
+      skills.hls,
+      skills.aws,
+      skills.graphql,
+      skills.node,
+      skills.react,
+      skills.swift,
+      skills.typescript,
+      skills.clean,
+    ],
   }),
   new Project({
     title: "This site!",

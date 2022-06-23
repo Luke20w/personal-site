@@ -18,7 +18,7 @@ export default function ProjectCard({ project }: { project: Project }) {
 
   // -- Render
   return (
-    <Paper sx={{ padding: 3, alignSelf: "start" }} variant="outlined">
+    <Paper sx={{ padding: 3 }} variant="outlined">
       <Stack spacing={2} maxWidth={300}>
         <Stack spacing={1}>
           <Typography variant="h5">{project.title}</Typography>
@@ -35,6 +35,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             </Button>
           )}
         </Stack>
+        {project.components}
         {(project.images || project.videos) && (
           <Carousel
             naturalSlideWidth={100}

@@ -7,6 +7,7 @@ import RecognitionCard from "./RecognitionCard";
 import SocialIconBar from "./SocialIconBar";
 import SectionBackground from "./SectionBackground";
 import SectionContainer from "./SectionContainer";
+import ResumeButton from "./ResumeButton";
 
 export {
   IconBar as NavBar,
@@ -18,4 +19,5 @@ export {
   SocialIconBar,
   SectionBackground,
   SectionContainer,
+  ResumeButton,
 };
