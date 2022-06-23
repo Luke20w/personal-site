@@ -41,11 +41,11 @@ export default function ProjectCard({ project }: { project: Project }) {
             naturalSlideWidth={100}
             content={[
               ...(project.videos ?? []).map((video) => (
-                <video src={video} style={{ width: "100%", borderRadius: 10 }} controls />
+                <video key={video} src={video} style={{ width: "100%", borderRadius: 10 }} controls />
               )),
               ...(project.images ?? []).map((image) => (
                 <Zoom>
-                  <img src={image} style={{ borderRadius: 10 }} alt="" />
+                  <img key={image} src={image} style={{ borderRadius: 10 }} alt="" />
                 </Zoom>
               )),
             ]}

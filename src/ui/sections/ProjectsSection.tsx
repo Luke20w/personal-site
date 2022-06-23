@@ -13,8 +13,8 @@ export default function ProjectsSection() {
           <Divider />
           <Grid container gap={2} sx={{ padding: -2 }}>
             {projects.map((project, index) => (
-              <Grid item>
-                <ProjectCard key={index} project={project} />
+              <Grid key={index} item>
+                <ProjectCard project={project} />
               </Grid>
             ))}
           </Grid>

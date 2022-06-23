@@ -68,27 +68,46 @@ export const skillsHeader = {
 };
 
 export const skills = {
+  react: new Skill("React", Proficiency.Expert, Category.Development, "akar-icons:react-fill"),
+  reactNative: new Skill("React Native", Proficiency.Expert, Category.Development, "akar-icons:react-fill"),
+  typescript: new Skill("TypeScript", Proficiency.Expert, Category.Development, "cib:typescript"),
+  javascript: new Skill("JavaScript", Proficiency.Expert, Category.Development, "cib:javascript"),
+  aws: new Skill("AWS Suite", Proficiency.Expert, Category.Development, "bxl:aws"),
+  clean: new Skill("Clean Architecture", Proficiency.Advanced, Category.Development, "ic:baseline-architecture"),
+  figma: new Skill("Figma", Proficiency.Advanced, Category.Design, "gg:figma"),
+  graphql: new Skill("GraphQL", Proficiency.Expert, Category.Development, "akar-icons:graphql-fill"),
+  node: new Skill("Node JS", Proficiency.Expert, Category.Development, "akar-icons:node-fill"),
+  mongodb: new Skill("MongoDB", Proficiency.Advanced, Category.Development, "bxl:mongodb"),
+  git: new Skill("Git", Proficiency.Advanced, Category.Development, "cib:git"),
+  hls: new Skill("HLS Video Streaming", Proficiency.Advanced, Category.Development, "ic:baseline-hls"),
+  java: new Skill("Java", Proficiency.Advanced, Category.Development, "la:java"),
+  python: new Skill("Python", Proficiency.Intermediate, Category.Development, "akar-icons:python-fill"),
+  swift: new Skill("Swift/XCode", Proficiency.Advanced, Category.Development, "fa6-brands:swift"),
   android: new Skill("Android Studio", Proficiency.Intermediate, Category.Development, "ant-design:android-filled"),
   appStore: new Skill("iOS App Store Publishing", Proficiency.Intermediate, Category.Development, "cib:app-store-ios"),
-  aws: new Skill("AWS Suite", Proficiency.Expert, Category.Development, "bxl:aws"),
-  c: new Skill("C/C++", Proficiency.Intermediate, Category.Development, "bxl:c-plus-plus"),
-  circuit: new Skill("Circuit Simulation", Proficiency.Intermediate, Category.Hardware, "codicon:circuit-board"),
-  clean: new Skill("Clean Architecture", Proficiency.Advanced, Category.Development, "ic:baseline-architecture"),
+  playStore: new Skill(
+    "Google Play Store Publishing",
+    Proficiency.Intermediate,
+    Category.Development,
+    "bxl:play-store"
+  ),
   facialRecognition: new Skill(
     "Facial Recognition",
     Proficiency.Intermediate,
     Category.Development,
     "wpf:facial-recognition-scan"
   ),
-  figma: new Skill("Figma", Proficiency.Advanced, Category.Design, "gg:figma"),
-  git: new Skill("Git", Proficiency.Advanced, Category.Development, "cib:git"),
-  graphql: new Skill("GraphQL", Proficiency.Expert, Category.Development, "akar-icons:graphql-fill"),
-  hls: new Skill("HLS Video Streaming", Proficiency.Advanced, Category.Development, "ic:baseline-hls"),
-  illustrator: new Skill(
-    "Adobe Illustrator",
+  objectRecognition: new Skill(
+    "Object Recognition",
     Proficiency.Intermediate,
-    Category.Design,
-    "file-icons:adobe-illustrator"
+    Category.Development,
+    "ri:voice-recognition-line"
+  ),
+  speech: new Skill(
+    "Speech Recognition",
+    Proficiency.Advanced,
+    Category.Development,
+    "healthicons:speech-language-therapy"
   ),
   intent: new Skill(
     "Speech Intent Algorithm Design",
@@ -96,38 +115,19 @@ export const skills = {
     Category.Development,
     "fluent:math-formula-16-filled"
   ),
-  java: new Skill("Java", Proficiency.Advanced, Category.Development, "la:java"),
-  javascript: new Skill("JavaScript", Proficiency.Expert, Category.Development, "cib:javascript"),
-  mips: new Skill("MIPS ISA", Proficiency.Intermediate, Category.Hardware, "file-icons:assembly-generic"),
-  mongodb: new Skill("MongoDB", Proficiency.Advanced, Category.Development, "bxl:mongodb"),
-  node: new Skill("Node JS", Proficiency.Expert, Category.Development, "akar-icons:node-fill"),
-  objectRecognition: new Skill(
-    "Object Recognition",
-    Proficiency.Intermediate,
-    Category.Development,
-    "ri:voice-recognition-line"
-  ),
   photoshop: new Skill("Adobe Photoshop", Proficiency.Intermediate, Category.Design, "file-icons:adobe-photoshop"),
-  playStore: new Skill(
-    "Google Play Store Publishing",
-    Proficiency.Intermediate,
-    Category.Development,
-    "bxl:play-store"
-  ),
-  python: new Skill("Python", Proficiency.Intermediate, Category.Development, "akar-icons:python-fill"),
   premiere: new Skill("Adobe Premiere", Proficiency.Intermediate, Category.Design, "file-icons:adobe-premiere"),
-  react: new Skill("React", Proficiency.Expert, Category.Development, "akar-icons:react-fill"),
-  rfid: new Skill("RFID", Proficiency.Intermediate, Category.Hardware, "wpf:rfid-tag"),
-  reactNative: new Skill("React Native", Proficiency.Expert, Category.Development, "akar-icons:react-fill"),
-  swift: new Skill("Swift/XCode", Proficiency.Advanced, Category.Development, "fa6-brands:swift"),
-  speech: new Skill(
-    "Speech Recognition",
-    Proficiency.Advanced,
-    Category.Development,
-    "healthicons:speech-language-therapy"
+  illustrator: new Skill(
+    "Adobe Illustrator",
+    Proficiency.Intermediate,
+    Category.Design,
+    "file-icons:adobe-illustrator"
   ),
-  typescript: new Skill("TypeScript", Proficiency.Expert, Category.Development, "cib:typescript"),
   webScraping: new Skill("Web Scraping", Proficiency.Intermediate, Category.Development, "mdi:web"),
+  rfid: new Skill("RFID", Proficiency.Intermediate, Category.Hardware, "wpf:rfid-tag"),
+  c: new Skill("C/C++", Proficiency.Intermediate, Category.Development, "bxl:c-plus-plus"),
+  circuit: new Skill("Circuit Simulation", Proficiency.Intermediate, Category.Hardware, "codicon:circuit-board"),
+  mips: new Skill("MIPS ISA", Proficiency.Intermediate, Category.Hardware, "file-icons:assembly-generic"),
 };
 
 // -- Projects section
@@ -139,7 +139,7 @@ export const projectsHeader = {
 export const projects = [
   new Project({
     title: "CrowdClips",
-    shortDescription: "CrowdClips is a platform for crowd-sourcing vido content for events",
+    shortDescription: "CrowdClips is a platform for crowd-sourcing video content for events",
     longDescription:
       "Users can record and submit videos on the mobile app. Then content supervisiors can access and look through all the videos in the web app. There, they can utilize a variety of data points from AI analysis of each video like facial expressions, object labels, and more to easily select the best videos. These videos can then be output to any data stream and played on the big screen at sporting events where. Organizations can even use the CrowdClips API to integrate CrowdClips submissions into their own apps. Georgia Tech, the Atlanta Falcons, and Mercedes Benz Stadium have shown interest in the platform 👀",
     skills: [
@@ -183,7 +183,7 @@ export const projects = [
   }),
   new Project({
     title: "RiNTER",
-    shortDescription: "Freelance real estate management and communication app wirefram",
+    shortDescription: "Freelance real estate management and communication app wireframe",
     skills: [skills.figma, skills.photoshop, skills.illustrator],
     images: [rinterMockup],
   }),
@@ -198,7 +198,7 @@ export const projects = [
     shortDescription:
       "Like any job, it's a big collection of projects. I've been working as Chief Technology Officer and now Director of Engineering since summer 2020. If you want to see more about Kleo or find out more about what I do there, you can check out our website or my resume in the contact section below",
     components: [
-      <Button href="https://www.meetkleo.com" target="_blank" variant="contained">
+      <Button key={0} href="https://www.meetkleo.com" target="_blank" variant="contained">
         Our site
       </Button>,
     ],
@@ -263,5 +263,5 @@ export const contactHeader = {
 
 export const contactOptions = [
   new ContactOption("weidnerluke@gmail.com", "eva:email-outline"),
-  new ContactOption("(513) 446-9378", "bi:phone"),
+  new ContactOption("(513) 446 9378", "bi:phone"),
 ];

@@ -59,7 +59,7 @@ function RenderDotGroup({ currentSlide, totalSlides }: { currentSlide?: number; 
   return (
     <Stack spacing={0.5} direction="row" justifyContent="center">
       {new Array(totalSlides).fill(0).map((_, index) => (
-        <RenderDot index={index} selected={index === currentSlide} />
+        <RenderDot key={index} index={index} selected={index === currentSlide} />
       ))}
     </Stack>
   );
