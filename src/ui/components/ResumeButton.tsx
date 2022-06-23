@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 export default function ResumeButton() {
   // -- Functions
   function openResume() {
-    window.open("/resume.pdf", "_blank");
+    window.open("/Luke Weidner Resume.pdf", "_blank");
   }
 
   // -- Render
