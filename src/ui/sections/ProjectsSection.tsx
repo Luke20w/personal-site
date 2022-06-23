@@ -11,7 +11,7 @@ export default function ProjectsSection() {
       <SectionBody>
         <Stack spacing={2}>
           <Divider />
-          <Grid container spacing={3}>
+          <Grid container gap={2} sx={{ padding: -2 }}>
             {projects.map((project, index) => (
               <Grid item>
                 <ProjectCard key={index} project={project} />

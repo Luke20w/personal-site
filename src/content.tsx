@@ -1,4 +1,4 @@
-import { Link } from "@mui/material";
+import { Button } from "@mui/material";
 
 import { Project, Skill, Recognition, ContactOption } from "./model";
 import { Category, Proficiency } from "./model/Skill";
@@ -54,7 +54,7 @@ export const aboutMeHeader = {
   subtitle: "That's a big question",
 };
 export const aboutMeContent = {
-  beforeKleo: `I lived in a small town near Cincinnati, OH, called Fort Thomas, until I left for Georgia Tech in 2020. My passion for building things started when I was 11. I began making little mobile games for fun and that Christmas, I asked for an Apple Developer License. Thankfully, Santa🎅 came through for me. From then on I spent whatever time I had outside of school and sports building. Whenever I ran into a problem, I'd scour the internet for the answer and then go on until I found the next problem. Over the years I was able to learn a lot with this strategy and that's what makes me a huge believer in learning by doing.
+  beforeKleo: `I lived in a small town near Cincinnati, OH, called Fort Thomas, until I left for Georgia Tech in 2020. My passion for building things started when I was 11. I began making little mobile games for fun and that Christmas, I asked for an Apple Developer License. Thankfully, Santa came through for me. From then on I spent whatever time I had outside of school and sports building. Whenever I ran into a problem, I'd scour the internet for the answer and then go on until I found the next problem. Over the years I was able to learn a lot with this strategy and that's what makes me a huge believer in learning by doing.
                                 
   In high school, I found another passion for turning my creations into businesses and I tried my hand at a few entrepreneurial endeavors, one of them which I've been working on to this day. I also did some freelance work, proving to myself again that diving into things I don't know is how I learn best.
   
@@ -196,11 +196,11 @@ export const projects = [
   new Project({
     title: "Kleo",
     shortDescription:
-      "Like any job, it's a big collection of projects. I've been working as Chief Technology Officer and now Director of Engineering at Kleo since summer 2020. If you want to see more about Kleo or find out more about what I do there, you can check out our website or my resume in the contact section below",
+      "Like any job, it's a big collection of projects. I've been working as Chief Technology Officer and now Director of Engineering since summer 2020. If you want to see more about Kleo or find out more about what I do there, you can check out our website or my resume in the contact section below",
     components: [
-      <Link href="https://www.meetkleo.com" sx={{ color: "white", fontWeight: "bold" }}>
+      <Button href="https://www.meetkleo.com" target="_blank" variant="contained">
         Our site
-      </Link>,
+      </Button>,
     ],
     skills: [
       skills.speech,
