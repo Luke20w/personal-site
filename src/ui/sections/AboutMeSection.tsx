@@ -1,4 +1,4 @@
-import { Stack, Typography, Divider, Button, Link } from "@mui/material";
+import { Stack, Typography, Divider, Button } from "@mui/material";
 
 import { SectionBody, SectionContainer, SectionHeaderText } from "../components";
 import { aboutMeContent, aboutMeHeader } from "../../content";

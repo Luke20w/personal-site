@@ -1,4 +1,4 @@
-import { Stack, Typography, Divider, IconButton } from "@mui/material";
+import { Stack, Typography, Divider, IconButton, Button } from "@mui/material";
 
 import { SectionBody, SectionContainer, SectionHeaderText, SocialIconBar } from "../components";
 import { contactHeader, contactOptions } from "../../content";
@@ -15,6 +15,10 @@ export default function ContactSection() {
       top: 0,
       behavior: "smooth",
     });
+  }
+
+  function openResume() {
+    window.open("/resume.pdf", "_blank");
   }
 
   // -- Components
@@ -48,6 +52,14 @@ export default function ContactSection() {
         <Stack spacing={10}>
           <Stack spacing={2}>
             <Divider />
+            <Button
+              onClick={openResume}
+              variant="contained"
+              sx={{ alignSelf: "start" }}
+              startIcon={<Icon icon="jam:newspaper-f" />}
+            >
+              My resume
+            </Button>
             {contactOptions.map((option, index) => (
               <ContactItem key={index} info={option.info} icon={option.icon} />
             ))}

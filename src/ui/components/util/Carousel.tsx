@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import { Stack, Box, Typography, Paper, Button, IconButton } from "@mui/material";
+import { Stack, Box, IconButton } from "@mui/material";
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, DotGroup, Dot } from "pure-react-carousel";
 import { Icon } from "@iconify/react";
 

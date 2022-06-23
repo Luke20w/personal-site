@@ -1,11 +1,11 @@
-import { Stack, Box, Typography, Button } from "@mui/material";
+import { Stack, Typography, Button } from "@mui/material";
 
 import { Recognition } from "../../model";
 
 export default function RecognitionCard({ recognition }: { recognition: Recognition }) {
   return (
     <Stack spacing={2} alignItems="center">
-      <img src={recognition.image} width={100} style={{ margin: 50 }} />
+      <img src={recognition.image} width={100} style={{ margin: 50 }} alt="" />
       <Stack spacing={2} alignItems="center">
         <Typography>{recognition.description}</Typography>
         {recognition.links && (

@@ -1,5 +1,4 @@
-import { Stack, Box, Divider, ToggleButtonGroup, ToggleButton } from "@mui/material";
-import { useState } from "react";
+import { Stack, Box, Divider } from "@mui/material";
 
 import { projects, projectsHeader } from "../../content";
 import { ProjectCard, SectionBody, SectionContainer, SectionHeaderText } from "../components";
