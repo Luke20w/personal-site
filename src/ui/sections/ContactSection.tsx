@@ -10,6 +10,13 @@ export default function ContactSection() {
     navigator.clipboard.writeText(text);
   }
 
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
   // -- Components
   function ContactItem({ icon, info }: { icon: string; info: string }) {
     return (
@@ -45,6 +52,9 @@ export default function ContactSection() {
               <ContactItem key={index} info={option.info} icon={option.icon} />
             ))}
           </Stack>
+          <Typography variant="subtitle1" onClick={scrollToTop} sx={{ cursor: "pointer", alignSelf: "center" }}>
+            👆 Back to the top?
+          </Typography>
           <SocialIconBar />
         </Stack>
       </SectionBody>

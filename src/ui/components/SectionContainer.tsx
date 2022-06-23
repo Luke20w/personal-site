@@ -17,7 +17,12 @@ export default function SectionContainer({
   };
 
   return (
-    <Stack paddingX={paddingX} color="white" overflow="hidden" sx={backgroundImage ? backgroundContainerStyle : {}}>
+    <Stack
+      paddingX={paddingX}
+      color={backgroundImage ? "white" : "text.primary"}
+      overflow="hidden"
+      sx={backgroundImage ? backgroundContainerStyle : {}}
+    >
       {backgroundImage && <SectionBackground image={backgroundImage} />}
       {children}
     </Stack>

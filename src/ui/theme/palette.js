@@ -103,7 +103,7 @@ const COMMON = {
     hover: GREY[500_8],
     selected: GREY[500_16],
     disabled: GREY[500_80],
-    disabledBackground: GREY[500_24],
+    disabledBackground: GREY[500_48],
     focus: GREY[500_24],
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,

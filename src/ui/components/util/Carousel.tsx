@@ -31,7 +31,7 @@ export default function Carousel({
               <IconButton>
                 <Icon
                   icon="eva:arrow-ios-back-outline"
-                  style={{ cursor: "pointer", color: "white" }}
+                  style={{ cursor: "pointer", color: "text.primary" }}
                   width={22}
                   height={22}
                 />
@@ -42,7 +42,7 @@ export default function Carousel({
               <IconButton>
                 <Icon
                   icon="eva:arrow-ios-forward-outline"
-                  style={{ cursor: "pointer", color: "white" }}
+                  style={{ cursor: "pointer", color: "text.primary" }}
                   width={22}
                   height={22}
                 />
@@ -68,7 +68,14 @@ function RenderDotGroup({ currentSlide, totalSlides }: { currentSlide?: number; 
 function RenderDot({ index, selected }: { index: number; selected: boolean }) {
   return (
     <Dot slide={index} style={{ background: "none", border: "none" }}>
-      <div style={{ width: 8, height: 8, background: selected ? "white" : "gray", borderRadius: 4 }} />
+      <Box
+        sx={{
+          width: 8,
+          height: 8,
+          backgroundColor: selected ? "text.primary" : "action.disabledBackground",
+          borderRadius: 4,
+        }}
+      />
     </Dot>
   );
 }
