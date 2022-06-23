@@ -1,12 +1,6 @@
 {
   "short_name": "Luke Weidner",
   "name": "Luke Weidner Personal Website",
-  "icons": [
-    {
-      "src": "icon.jpg",
-      "type": "image/jpg"
-    }
-  ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
