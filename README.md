@@ -1,3 +1,3 @@
 # Luke Weidner's Personal Website
 
-This is a personal site built in React. It's a bit more friendly and can show you a lot more than a normal resume could
+This site let's you know a little bit more about me than a resume would and as a bonus, I had tons to fun making it!
