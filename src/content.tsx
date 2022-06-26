@@ -56,10 +56,10 @@ export const aboutMeHeader = {
 export const aboutMeContent = {
   beforeKleo: `I lived in a small town near Cincinnati, OH, called Fort Thomas, until I left for Georgia Tech in 2020. My passion for building things started when I was 11. I began making little mobile games for fun and that Christmas, I asked for an Apple Developer License. Thankfully, Santa came through for me. From then on I spent whatever time I had outside of school and sports building. Whenever I ran into a problem, I'd scour the internet for the answer and then go on until I found the next problem. Over the years I was able to learn a lot with this strategy and that's what makes me a huge believer in learning by doing.
                                 
-  In high school, I found another passion for turning my creations into businesses and I tried my hand at a few entrepreneurial endeavors, one of them which I've been working on to this day. I also did some freelance work, proving to myself again that diving into things I don't know is how I learn best.
+  In high school, I found another passion for turning my creations into businesses and I tried my hand at a few entrepreneurial endeavors, one of them which I've been working on to this day. I also did some freelance work, proving to myself again that diving into things I don't know yet is how I learn best. In my expereince, I've found that nothing satisfies me more than when I can take pride in my work and meet new people along the way.
   
   Now I  work at a language learning startup, `,
-  afterKleo: `, managing our development team and study Computer Engineering at Georgia Tech. In the time I get outside of work and school, I love doing pretty much anything outside. I also love competition, especially sports. I'm a massive Bengals and Reds (unfortunately) fan and I compete in Spikeball tournaments around Atlanta. That's about all I have for now but it's not at all comprehensive of who I am so let's have a conversation!`,
+  afterKleo: `, managing our development team and study Computer Engineering at Georgia Tech. In the time I get outside work and school, I love doing pretty much anything outdoors. I also love competition, especially sports. I'm a massive Bengals and Reds (unfortunately) fan and I compete in Spikeball tournaments around Atlanta. That's about all I have for now but it's not at all comprehensive of who I am so let's have a conversation!`,
 };
 // -- Skills section
 export const skillsHeader = {
