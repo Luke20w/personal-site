@@ -59,7 +59,7 @@ export const aboutMeContent = {
   In high school, I found another passion for turning my creations into businesses and I tried my hand at a few entrepreneurial endeavors, one of them which I've been working on to this day. I also did some freelance work, proving to myself again that diving into things I don't know is how I learn best.
   
   Now I  work at a language learning startup, `,
-  afterKleo: `, managing our development team and study Computer Engineering at Georgia Tech. I also love competition, especially sports. I'm a massive Bengals and Reds (unfortunately) fan and I compete in Spikeball tournaments around Atlanta. That's about all I have for now but it's not at all comprehensive of who I am so let's have a conversation!`,
+  afterKleo: `, managing our development team and study Computer Engineering at Georgia Tech. In the time I get outside of work and school, I love doing pretty much anything outside. I also love competition, especially sports. I'm a massive Bengals and Reds (unfortunately) fan and I compete in Spikeball tournaments around Atlanta. That's about all I have for now but it's not at all comprehensive of who I am so let's have a conversation!`,
 };
 // -- Skills section
 export const skillsHeader = {
