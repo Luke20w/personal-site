@@ -7,13 +7,15 @@ import SectionBackground from "./SectionBackground";
 export default function SectionContainer({
   backgroundImage,
   children,
+  paddingY = 20,
 }: {
   backgroundImage?: string;
   children?: ReactElement | ReactElement[];
+  paddingY?: number;
 }) {
   const backgroundContainerStyle = {
     position: "relative",
-    paddingY: 20,
+    paddingY: paddingY,
   };
 
   return (

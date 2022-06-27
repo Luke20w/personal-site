@@ -6,7 +6,7 @@ import { SectionBody, SectionHeaderText, RecognitionCard, SectionContainer } fro
 
 export default function RecognitionSection() {
   return (
-    <SectionContainer backgroundImage={wave}>
+    <SectionContainer backgroundImage={wave} paddingY={25}>
       <SectionHeaderText title={recognitionHeader.title} subitle={recognitionHeader.subtitle} center />
       <SectionBody>
         <Stack spacing={2}>
