@@ -7,7 +7,7 @@ export default function ProjectsSection() {
   // -- Render
   return (
     <SectionContainer>
-      <SectionHeaderText title={projectsHeader.title} subitle={projectsHeader.subtitle} />
+      <SectionHeaderText title={projectsHeader.title} subtitle={projectsHeader.subtitle} />
       <SectionBody>
         <Stack spacing={2}>
           <Divider />

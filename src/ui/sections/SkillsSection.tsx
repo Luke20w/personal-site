@@ -21,7 +21,7 @@ export default function SkillsSection() {
   const groupingType = grouping === "proficiency" ? Proficiency : Category;
   return (
     <SectionContainer>
-      <SectionHeaderText title={skillsHeader.title} subitle={skillsHeader.subtitle} />
+      <SectionHeaderText title={skillsHeader.title} subtitle={skillsHeader.subtitle} />
       <SectionBody>
         <Stack spacing={2}>
           <Divider />

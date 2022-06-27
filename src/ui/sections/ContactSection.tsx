@@ -43,7 +43,7 @@ export default function ContactSection() {
 
   return (
     <SectionContainer>
-      <SectionHeaderText title={contactHeader.title} subitle={contactHeader.subtitle} />
+      <SectionHeaderText title={contactHeader.title} subtitle={contactHeader.subtitle} />
       <SectionBody>
         <Stack spacing={10}>
           <Stack spacing={2}>

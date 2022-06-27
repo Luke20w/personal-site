@@ -17,7 +17,7 @@ export default function AboutMeSection() {
   // -- Render
   return (
     <SectionContainer backgroundImage={wave}>
-      <SectionHeaderText title={aboutMeHeader.title} subitle={aboutMeHeader.subtitle} />
+      <SectionHeaderText title={aboutMeHeader.title} subtitle={aboutMeHeader.subtitle} />
       <SectionBody>
         <Stack spacing={4}>
           <Stack spacing={2}>

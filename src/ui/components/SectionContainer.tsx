@@ -30,7 +30,7 @@ export default function SectionContainer({
       }}
     >
       {backgroundImage && <SectionBackground image={backgroundImage} />}
-      <Box sx={{ maxWidth: 1200 }}>{children}</Box>
+      <Box sx={{ maxWidth: 1200, width: "100%" }}>{children}</Box>
     </Box>
   );
 }
