@@ -10,7 +10,7 @@ import SectionContainer from "./SectionContainer";
 import ResumeButton from "./ResumeButton";
 
 export {
-  IconBar as NavBar,
+  IconBar,
   ProjectCard,
   SkillPill,
   SectionHeaderText,

@@ -8,12 +8,10 @@ import {
   RecognitionSection,
   ContactSection,
 } from "../sections";
-import { NavBar } from "../components";
 
 function Home() {
   return (
     <Stack>
-      <NavBar />
       <Stack marginTop={5} spacing={15} paddingBottom={5}>
         <HeaderSection />
         <AboutMeSection />
