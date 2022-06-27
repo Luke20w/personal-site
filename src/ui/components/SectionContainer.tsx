@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import { Stack } from "@mui/material";
+import { Box } from "@mui/material";
 
 import { paddingX } from "../theme/layout";
 import SectionBackground from "./SectionBackground";
@@ -17,14 +17,18 @@ export default function SectionContainer({
   };
 
   return (
-    <Stack
+    <Box
       paddingX={paddingX}
       color={backgroundImage ? "white" : "text.primary"}
       overflow="hidden"
-      sx={backgroundImage ? backgroundContainerStyle : {}}
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        ...(backgroundImage ? backgroundContainerStyle : {}),
+      }}
     >
       {backgroundImage && <SectionBackground image={backgroundImage} />}
-      {children}
-    </Stack>
+      <Box sx={{ maxWidth: 1200 }}>{children}</Box>
+    </Box>
   );
 }
