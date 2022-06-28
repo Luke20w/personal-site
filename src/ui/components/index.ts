@@ -8,6 +8,7 @@ import SocialIconBar from "./SocialIconBar";
 import SectionBackground from "./SectionBackground";
 import SectionContainer from "./SectionContainer";
 import ResumeButton from "./ResumeButton";
+import BackToTopButton from "./util/BackToTopButton";
 
 export {
   IconBar,
@@ -20,4 +21,5 @@ export {
   SectionBackground,
   SectionContainer,
   ResumeButton,
+  BackToTopButton,
 };

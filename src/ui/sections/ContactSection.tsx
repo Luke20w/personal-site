@@ -1,20 +1,13 @@
 import { Stack, Typography, Divider, IconButton } from "@mui/material";
 import { Icon } from "@iconify/react";
 
-import { ResumeButton, SectionBody, SectionContainer, SectionHeaderText, SocialIconBar } from "../components";
+import { ResumeButton, SectionBody, SectionContainer, SectionHeaderText } from "../components";
 import { contactHeader, contactOptions } from "../../content";
 
 export default function ContactSection() {
   // -- Functions
   function copyToClipboard(text: string) {
     navigator.clipboard.writeText(text);
-  }
-
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
   }
 
   // -- Components
@@ -53,10 +46,6 @@ export default function ContactSection() {
               <ContactItem key={index} info={option.info} icon={option.icon} />
             ))}
           </Stack>
-          <Typography variant="subtitle1" onClick={scrollToTop} sx={{ cursor: "pointer", alignSelf: "center" }}>
-            👆 Back to the top?
-          </Typography>
-          <SocialIconBar />
         </Stack>
       </SectionBody>
     </SectionContainer>

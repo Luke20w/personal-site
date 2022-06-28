@@ -1,4 +1,5 @@
 import { Stack } from "@mui/material";
+import { SocialIconBar, BackToTopButton } from "../components";
 
 import {
   HeaderSection,
@@ -12,13 +13,17 @@ import {
 function Home() {
   return (
     <Stack>
-      <Stack marginTop={5} spacing={15} paddingBottom={5}>
+      <Stack spacing={15} paddingTop={10} paddingBottom={5}>
         <HeaderSection />
         <AboutMeSection />
         <SkillsSection />
         <ProjectsSection />
         <RecognitionSection />
         <ContactSection />
+        <Stack spacing={5}>
+          <BackToTopButton />
+          <SocialIconBar />
+        </Stack>
       </Stack>
     </Stack>
   );
