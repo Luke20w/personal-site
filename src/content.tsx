@@ -1,19 +1,19 @@
 import { Button } from "@mui/material";
 
-import { Project, Skill, Recognition, ContactOption } from "./model";
-import { Category, Proficiency } from "./model/Skill";
+import { ContactOption, Project, Recognition, Skill } from "./model";
 import { RecognitionLink } from "./model/Recognition";
+import { Category, Proficiency } from "./model/Skill";
 
 import crowdClipsLogo from "./assets/images/projects/crowdclips/logo.png";
-import crowdClispWeb from "./assets/images/projects/crowdclips/web-panel.png";
 import crowdClipsMobile from "./assets/images/projects/crowdclips/record-screen.png";
+import crowdClispWeb from "./assets/images/projects/crowdclips/web-panel.png";
 
-import infinityGames from "./assets/images/projects/games/infinity-games.png";
+import blockBounceSS from "./assets/images/projects/games/block-bounc-ss.png";
+import blockBounce from "./assets/images/projects/games/block-bounce-icon.png";
+import colorShoot from "./assets/images/projects/games/color-shoot-icon.png";
 import drawItSS1 from "./assets/images/projects/games/draw-it-ss1.png";
 import drawItSS2 from "./assets/images/projects/games/draw-it-ss2.png";
-import blockBounce from "./assets/images/projects/games/block-bounce-icon.png";
-import blockBounceSS from "./assets/images/projects/games/block-bounc-ss.png";
-import colorShoot from "./assets/images/projects/games/color-shoot-icon.png";
+import infinityGames from "./assets/images/projects/games/infinity-games.png";
 import megaBounce from "./assets/images/projects/games/mega-bounce-icon.png";
 import quadraJump from "./assets/images/projects/games/quadra-jump-icon.png";
 import rotationRun from "./assets/images/projects/games/rotation-run-icon.png";
@@ -138,6 +138,28 @@ export const projectsHeader = {
 
 export const projects = [
   new Project({
+    title: "Kleo",
+    shortDescription:
+      "Like any job, it's a big collection of projects. I've been working as Chief Technology Officer and now Director of Engineering since summer 2020. If you want to see more about Kleo or find out more about what I do there, you can check out our website or my resume in the contact section below",
+    components: [
+      <Button key={0} href="https://www.meetkleo.com" target="_blank" variant="contained">
+        Our site
+      </Button>,
+    ],
+    skills: [
+      skills.speech,
+      skills.intent,
+      skills.hls,
+      skills.aws,
+      skills.graphql,
+      skills.node,
+      skills.react,
+      skills.swift,
+      skills.typescript,
+      skills.clean,
+    ],
+  }),
+  new Project({
     title: "CrowdClips",
     shortDescription: "CrowdClips is a platform for crowd-sourcing video content for events",
     longDescription:
@@ -192,28 +214,6 @@ export const projects = [
     shortDescription:
       "Freelance web app built for education company Abre to scrape data from legislation websites and aggregate the latest education policies for 6 states into a single database",
     skills: [skills.node, skills.javascript, skills.webScraping, skills.mongodb],
-  }),
-  new Project({
-    title: "Kleo",
-    shortDescription:
-      "Like any job, it's a big collection of projects. I've been working as Chief Technology Officer and now Director of Engineering since summer 2020. If you want to see more about Kleo or find out more about what I do there, you can check out our website or my resume in the contact section below",
-    components: [
-      <Button key={0} href="https://www.meetkleo.com" target="_blank" variant="contained">
-        Our site
-      </Button>,
-    ],
-    skills: [
-      skills.speech,
-      skills.intent,
-      skills.hls,
-      skills.aws,
-      skills.graphql,
-      skills.node,
-      skills.react,
-      skills.swift,
-      skills.typescript,
-      skills.clean,
-    ],
   }),
   new Project({
     title: "This site!",
