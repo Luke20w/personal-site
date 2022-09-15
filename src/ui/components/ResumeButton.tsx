@@ -1,5 +1,5 @@
-import { Button } from "@mui/material";
 import { Icon } from "@iconify/react";
+import { Button } from "@mui/material";
 
 export default function ResumeButton() {
   // -- Functions
@@ -9,12 +9,7 @@ export default function ResumeButton() {
 
   // -- Render
   return (
-    <Button
-      onClick={openResume}
-      variant="contained"
-      sx={{ alignSelf: "start" }}
-      startIcon={<Icon icon="jam:newspaper-f" />}
-    >
+    <Button onClick={openResume} variant="contained" startIcon={<Icon icon="jam:newspaper-f" />}>
       My resume
     </Button>
   );

@@ -74,6 +74,20 @@ export const skills = {
   javascript: new Skill("JavaScript", Proficiency.Expert, Category.Development, "cib:javascript"),
   aws: new Skill("AWS Suite", Proficiency.Expert, Category.Development, "bxl:aws"),
   clean: new Skill("Clean Architecture", Proficiency.Advanced, Category.Development, "ic:baseline-architecture"),
+  projectManagment: new Skill(
+    "Project Management",
+    Proficiency.Advanced,
+    Category.Development,
+    "icon-park-solid:category-management"
+  ),
+  solid: new Skill("SOLID", Proficiency.Advanced, Category.Development, "clarity:design-solid"),
+  devOps: new Skill("DevOps", Proficiency.Advanced, Category.Development, "simple-icons:azuredevops"),
+  cloudSecurity: new Skill(
+    "Cloud Security",
+    Proficiency.Advanced,
+    Category.Development,
+    "ant-design:security-scan-filled"
+  ),
   figma: new Skill("Figma", Proficiency.Advanced, Category.Design, "gg:figma"),
   graphql: new Skill("GraphQL", Proficiency.Expert, Category.Development, "akar-icons:graphql-fill"),
   node: new Skill("Node JS", Proficiency.Expert, Category.Development, "akar-icons:node-fill"),
@@ -157,6 +171,10 @@ export const projects = [
       skills.swift,
       skills.typescript,
       skills.clean,
+      skills.solid,
+      skills.projectManagment,
+      skills.cloudSecurity,
+      skills.devOps,
     ],
   }),
   new Project({

@@ -1,8 +1,8 @@
-import { Stack, Typography, Divider, IconButton } from "@mui/material";
 import { Icon } from "@iconify/react";
+import { Divider, Stack, Typography } from "@mui/material";
 
-import { ResumeButton, SectionBody, SectionContainer, SectionHeaderText } from "../components";
 import { contactHeader, contactOptions } from "../../content";
+import { ResumeButton, SectionBody, SectionContainer, SectionHeaderText } from "../components";
 
 export default function ContactSection() {
   // -- Functions
@@ -13,38 +13,24 @@ export default function ContactSection() {
   // -- Components
   function ContactItem({ icon, info }: { icon: string; info: string }) {
     return (
-      <Stack
-        spacing={1}
-        direction="row"
-        alignItems="center"
-        sx={{
-          "&:hover": {
-            "& #copy": {
-              opacity: 1,
-            },
-          },
-        }}
-      >
+      <Stack spacing={1} direction="row" alignItems="center">
         <Icon icon={icon} width={22} height={22} />
         <Typography>{info}</Typography>
-        <IconButton id="copy" sx={{ opacity: 0 }} onClick={() => copyToClipboard(info)}>
-          <Icon icon="bxs:copy" width={16} height={16} />
-        </IconButton>
       </Stack>
     );
   }
 
   return (
     <SectionContainer>
-      <SectionHeaderText title={contactHeader.title} subtitle={contactHeader.subtitle} />
+      <SectionHeaderText title={contactHeader.title} subtitle={contactHeader.subtitle} center />
       <SectionBody>
-        <Stack spacing={10}>
-          <Stack spacing={2}>
-            <Divider />
-            <ResumeButton />
+        <Stack spacing={3}>
+          <Divider />
+          <Stack spacing={3} alignItems="center">
             {contactOptions.map((option, index) => (
               <ContactItem key={index} info={option.info} icon={option.icon} />
             ))}
+            <ResumeButton />
           </Stack>
         </Stack>
       </SectionBody>
